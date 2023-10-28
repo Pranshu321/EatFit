@@ -8,6 +8,7 @@ import SignUp from "./components/auth/SignUp";
 import Blog from "./components/Blogs";
 import SingleBlog from "./components/Blogs/SingleBlog";
 import Pantry from "./components/pantry";
+import FoodEncyclopedia from "./components/Food_Encyclopedia";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/article" element={<Blog />}></Route>
         <Route path="/pantry" element={<Pantry />}></Route>
         <Route path="/article/:blogId" element={<SingleBlog />} />
+        <Route path="/foodenc" element={<FoodEncyclopedia />} />
       </Routes>
     </div>
   );
