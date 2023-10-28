@@ -1,4 +1,7 @@
-# Byte-compiled / optimized / DLL files
+
+Calorie_Snap\indian_food_image_detection
+knowYourfood\__pycache__
+Calorie_Snap\__pycache__
 __pycache__/
 *.py[cod]
 *$py.class
