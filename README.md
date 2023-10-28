@@ -26,35 +26,35 @@ In the latest Hunger Index Report India was categorised with severity of hunger 
 ### Features
 
 <details>
-  <summary><strong>Calorie Snap:</strong></summary>
+  <summary><strong>Calorie Snap </strong></summary>
   Capture and analyze your favourite Indian food photos to determine calorie counts and discover similar foods.
 </details>
 
 <details>
-  <summary><strong>Nutri Tracker:</strong></summary>
+  <summary><strong>Nutri Tracker </strong></summary>
   Plan and track your diet, monitor your nutritional intake of proteins, vitamins and other essentials, and make good food choices.
 </details>
 
 <details>
-  <summary><strong>Food Encyclopedia:</strong></summary>
+  <summary><strong>Food Encyclopedia </strong></summary>
   
  Explore a comprehensive database of Indian foods, including their ingredients, their taste , place of origin. Through this you get to know how rich Indian cuisines are!
 </details>
 
 <details>
-  <summary><strong>Pantry Locator:</strong></summary>
+  <summary><strong>Pantry Locator </strong></summary>
   
   Find the nearest food pantries offering free food assistance based on your City or State.
 </details>
 
 <details>
-  <summary><strong>Articles</strong></summary>
+  <summary><strong>Articles </strong></summary>
   
   Access informative articles on nutrition, health, and culinary topics to enhance your food knowledge.
 </details>
 
 <details>
-  <summary><strong>Nutritionist</strong></summary>
+  <summary><strong>Nutritionist </strong></summary>
   Get expert advice from certified nutritionists to support your dietary goals and make healthier choices.
 </details>
 
