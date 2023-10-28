@@ -38,7 +38,7 @@ function Home() {
           <Features />
           {/* <Midbox /> */}
           {/* <Testimonial /> */}
-          <Contacts />
+          {/* <Contacts /> */}
           <LatestArticleSection />
           <Footer />
         </div>

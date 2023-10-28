@@ -20,9 +20,10 @@ const HeroSection = () => {
           <span>Every Nourished Life</span>
         </h1>
         <p className=" text-gray-600 w-full">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt
-          nam itaque sed eius modi error totam sit illum. Voluptas doloribus
-          asperiores quaerat aperiam. Quidem harum omnis beatae ipsum soluta!
+          Discover the Nourished Life app, where every bite shares a unique
+          story of health and wellness. Explore a world of nutrition and
+          well-being through your meals. Start your journey to a healthier you
+          today <span className="tracking-widest">!!!</span>
         </p>
       </div>
       <div className="w-full flex justify-center items-center md:flex-row box-border gap-6 mt-16 flex-col md:p-0 p-8 ">
@@ -30,28 +31,30 @@ const HeroSection = () => {
           <Link to={"/login"}>Get started</Link>
         </button>
         <button className="md:w-32 h-11 w-full bg-HoverDiv rounded-3xl px-4 py-1 text-textH font-semibold   transition-all duration-500 border-[1px] border-gray-700  hover:scale-105  z-50 ">
-          Learn more
+          <Link to={"/article"}>Learn more</Link>
         </button>
       </div>
       <div className=" lg:w-[70%] md:w-4/5   hidden  h-auto mt-16 border-t-[1px] border-t-gray-700  border-b-[1px] border-b-gray-700 md:flex justify-between items-center  py-8">
         <div className="w-auto h-auto box-border flex justify-center items-start flex-col gap-y-2">
           <h2 className="text-textH font-semibold  text-lg">
-            The lowest price
+            Empower Healthy Choices
           </h2>
-          <p className="text-textP">Some text here</p>
+          <p className="text-textP">Healthier food choices</p>
         </div>
         <div className="w-auto h-auto box-border flex justify-center items-start flex-col gap-y-2">
           <h2 className="text-textH font-semibold  text-lg">
-            The fastest on the market
+            Nutritional Diversity
           </h2>
-          <p className="text-textP ">Some text here</p>
+          <p className="text-textP ">Value of a balanced diet.</p>
         </div>
         <div className="w-auto h-auto box-border flex justify-center items-start flex-col gap-y-2">
-          <h2 className="text-textH font-semibold  text-lg">The most loved</h2>
-          <p className="text-textP ">Some text here</p>
+          <h2 className="text-textH font-semibold  text-lg">
+            Facilitate Access{" "}
+          </h2>
+          <p className="text-textP ">Finding most suitable NGOs</p>
         </div>
       </div>
-      <div className="mt-12 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:w-full  w-4/5">
+      {/* <div className="mt-12 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:w-full  w-4/5">
         <div className="p-4 grayscale transition duration-200 hover:grayscale-0 flex justify-center items-center">
           <img src={Clients.img5} alt="" className="w-auto h-12 mx-auto" />
         </div>
@@ -70,7 +73,7 @@ const HeroSection = () => {
         <div className="p-4 grayscale transition duration-200 hover:grayscale-0 flex justify-center items-center">
           <img src={Clients.img3} alt="" className="w-auto h-12 mx-auto" />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
