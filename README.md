@@ -126,7 +126,6 @@ _Below is an example of how you can instruct your audience on installing and set
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
----
 
 <h2 align="center" size="30px">Technologies Used</h2> 
 
@@ -145,6 +144,9 @@ _Below is an example of how you can instruct your audience on installing and set
 7. **Model Backend**       : `FastAPI` , `Uvicorn`
 
 8. **Payment Service**     : `Stripe`
+  
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 
 <h2 align="center" size="30px"> Our team - Hackit </h2>
 
@@ -158,6 +160,7 @@ Member 3 - [Pranshu Jain](https://github.com/Pranshu321)
 Web APP : [Feed India](https://feedindia.netlify.app/)
 
 Video Link : [Demo Video](https://www.loom.com/share/07374277cc9242ab89b023517e9a3c8c)
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
