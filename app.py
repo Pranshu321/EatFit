@@ -19,8 +19,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
-
+@app.get("/")
+def welcome_root():
+    return "Upload the food image to track the calorie"
 
 @app.post("/upload/")
 def upload_image(file: UploadFile = File(...)): 
