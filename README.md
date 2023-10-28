@@ -166,5 +166,5 @@ Video Link : [Demo Video](https://www.loom.com/share/07374277cc9242ab89b023517e9
 1. Pantry API : https://script.google.com/macros/s/AKfycbyHhdTcTC1vUM7EdrAfXGAPKwmrHSjTGYtKlT2fLpC3IbEqr_4LDo86MyIyEdLe5nsAzw/exec 
 2. [Food Detection from Food Platter with RCNN](https://medium.com/smileinnovation/capturing-your-dinner-a-deep-learning-story-bf8f8b65f26f)
 3. [Articles and videos on nutrition](https://nutritionfacts.org/)
-4. [Kaggle Indian Food dataset]()
-5. [Indian Food 101]()
+4. [Kaggle Indian Food dataset](https://www.kaggle.com/datasets/iamsouravbanerjee/indian-food-images-dataset)
+5. [Indian Food 101](https://www.kaggle.com/datasets/nehaprabhavalkar/indian-food-101)
