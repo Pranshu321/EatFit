@@ -1,6 +1,7 @@
 import { featureData, technologyIntro } from '../Data/Data';
 import { BsStars } from 'react-icons/bs';
 import { FaArrowRight } from 'react-icons/fa6';
+import { Link } from 'react-router-dom';
 const Features = () => {
   return (
     <section className="w-[80%] m-auto my-20" id="feature">
@@ -43,7 +44,7 @@ const Features = () => {
                 href=""
                 className="text-textP text-base mt-12 mb-3 flex align-middle gap-28  group-hover:text-accent"
               >
-                <div className="">{value.btn}</div>
+                <Link to={value.link} className="">{value.btn}</Link>
                 <div className="icon mt-1 opacity-0 group-hover:opacity-100 group-hover:translate-x-8 transition-all duration-700">
                   <FaArrowRight />
                 </div>

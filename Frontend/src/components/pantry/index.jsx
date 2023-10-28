@@ -148,7 +148,7 @@ const Pantry = () => {
             Search
           </button>
         </div>
-        <div className="flex gap-y-10 flex-wrap w-full justify-evenly">
+        <div className="flex mt-10 gap-y-10 flex-wrap w-full justify-evenly">
             {
                 cardData.map((item,idx)=>{
                     return (

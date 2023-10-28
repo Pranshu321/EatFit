@@ -9,8 +9,9 @@ const LatestArticleSection = () => {
         Latest Article
       </div>
       <div className="text-center text-gray-500 py-4 lg:w-3/5  w-4/5 flex justify-center items-center">
-        Quam hic dolore cumque voluptate rerum beatae et quae,tempore sunt,
-        debitis dolorum officia aliquid explicabo? Excepturi, voluptate?
+        Stay Informed and Inspired with Our Latest Articles. Explore a Wealth of
+        Nutrition Knowledge, Wellness Tips, and Healthy Living Stories, All in
+        One Place.
       </div>
       <div className="boxes  my-7 w-full grid lg:gap-8 md:grid-cols-2 lg:grid-cols-3 place-items-center md:px-8">
         <div className="lg:w-96 md:w-80 w-72 bg-white rounded-3xl border-gray-600 border-[1px] my-4">
@@ -28,7 +29,9 @@ const LatestArticleSection = () => {
             Voluptates harum aliquam totam, doloribus eum impedit atque!
             Temporibus...
           </div>
-          <button className="pl-7  text-blue-500 font-semibold mb-7">Read More</button>
+          <button className="pl-7  text-blue-500 font-semibold mb-7">
+            Read More
+          </button>
         </div>
         <div className="lg:w-96 md:w-80 w-72 bg-white rounded-3xl border-gray-600 border-[1px] my-4">
           <div className="overflow-hidden lg:w-80 md:w-72 w-64 m-auto rounded-xl lg:h-64  md:h-60 h-56 my-7">
@@ -45,7 +48,9 @@ const LatestArticleSection = () => {
             Voluptates harum aliquam totam, doloribus eum impedit atque!
             Temporibus...
           </div>
-          <button className="pl-7 font-semibold text-blue-500 mb-7">Read More</button>
+          <button className="pl-7 font-semibold text-blue-500 mb-7">
+            Read More
+          </button>
         </div>
         <div className="lg:w-96 md:w-80 w-72 bg-white rounded-3xl border-gray-600 border-[1px] my-4">
           <div className="overflow-hidden lg:w-80 md:w-72 w-64 m-auto rounded-xl lg:h-64  md:h-60 h-56 my-7">
@@ -62,7 +67,9 @@ const LatestArticleSection = () => {
             Voluptates harum aliquam totam, doloribus eum impedit atque!
             Temporibus...
           </div>
-          <button className="pl-7  text-blue-500 font-semibold mb-7">Read More</button>
+          <button className="pl-7  text-blue-500 font-semibold mb-7">
+            Read More
+          </button>
         </div>
       </div>
     </div>
