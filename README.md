@@ -13,7 +13,7 @@ Just having a meal isn't enough , taking right meal for your body and making nut
 <div align="left">
 <h3>Motivation</h3>
 <img src="https://himanigottasay.files.wordpress.com/2018/11/stunting-child-survival-development-for-every-child-in-india_511a79bd548da_w1500.jpg" width="539px" alt="picture">
-<img src="https://pbs.twimg.com/media/F8TYO5gbEAA1S-r.jpg" width="500px" alt="picture">
+<img src="https://pbs.twimg.com/media/F8TYO5gbEAA1S-r.jpg" width="539px" alt="picture">
 
 <p>
 
