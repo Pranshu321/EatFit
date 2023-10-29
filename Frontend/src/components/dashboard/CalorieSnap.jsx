@@ -46,7 +46,8 @@ function CalorieSnap() {
 			.request(config)
 			.then((response) => {
 				console.log(JSON.stringify(response.data));
-				setDish(response.data[0]);
+                let dis = response.data[0].replace(/_/g, ' ')
+				setDish(dis);
 			})
 			.catch((err) => {
 				console.log(err.message);
