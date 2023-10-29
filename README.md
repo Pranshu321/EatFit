@@ -23,6 +23,9 @@ In the latest Hunger Index Report India was categorised with severity of hunger 
 
 
 <h2 align="center" size="30px">Features</h2> 
+<img src="https://github.com/Pranshu321/FeedIndia/assets/73426684/52315846-cd70-4bcd-a334-ba3987ec591b" width="300px" alt="picture">
+
+<img src="https://github.com/Pranshu321/FeedIndia/assets/73426684/eac51d3f-ad88-47f5-ac62-2af5fd3bd7fa" width="400px" alt="picture">
 <details>
   <summary><strong>Calorie Snap </strong></summary>
 <div align="left">
