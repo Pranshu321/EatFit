@@ -9,7 +9,7 @@ const Dashboard = () => {
   const router = useNavigate();
   const featureData = [
   {
-    img: iconfirst,
+    // img: iconfirst,
     alt: `First feature`,
     title: `Calorie Snap`,
     discription: ` Snap a photo for instant nutrition information.`,
@@ -18,7 +18,7 @@ const Dashboard = () => {
     bg: true,
   },
   {
-    img: iconSecond,
+    // img: iconSecond,
     alt: `burger illustration`,
     title: `Nutri Tracker`,
     discription: `Plan meals and track their nutritional values.`,
