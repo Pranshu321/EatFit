@@ -1,5 +1,5 @@
-uvicorn = "*"
-fastapi = "*"
-pandas = "*"
-matplotlib = "*"
-pydantic = "*"
+uvicorn
+fastapi 
+pandas
+matplotlib 
+pydantic 
