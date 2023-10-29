@@ -7,11 +7,7 @@
 </div>
 <p align="left">
 <img src="https://github.com/Pranshu321/FeedIndia/assets/73426684/52315846-cd70-4bcd-a334-ba3987ec591b" width="300px" alt="picture">
-  
-<p></p>
-
 <img src="https://github.com/Pranshu321/FeedIndia/assets/73426684/eac51d3f-ad88-47f5-ac62-2af5fd3bd7fa" width="400px" alt="picture">
-
 <br>Just having a meal isn't enough , taking right meal for your body and making nutritional good choices is important. With <b>" Feed India " </b> we aim to improve India's Hunger Index ranking and hence reducing child wastage and stunting by making people aware of their nutrition intake. Through our app we can start making informed choices, take nutritionist suggestions, bridge the gap in your diet, and nourish your body with the nutrients it deserves. 
 </p>
 
@@ -74,7 +70,7 @@ In the latest Hunger Index Report India was categorised with severity of hunger 
  <div align="left">
  <h3> How it works </h3>
  <h4>Access informative articles on nutrition, health, and culinary topics to enhance your food knowledge.</h4>
- <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/86917304/278876356-c30b9545-f3cd-4bac-8c2c-a1e36afc26bb.png" width="500px" alt="picture">
+ <img src="https://pbs.twimg.com/media/F8TYO5gbEAA1S-r.jpg" width="300px" alt="picture">
  <p></p>
  </div>  
 </details>
@@ -84,8 +80,7 @@ In the latest Hunger Index Report India was categorised with severity of hunger 
   <div align="left">
   <h3> How it works </h3>
   <h4>Get expert advice from certified nutritionists to support your dietary goals and make healthier choices.</h4>
-  <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/86917304/278876321-b03d7774-3688-415b-82e1-a494559c670b.png" width="500px" alt="picture">
-
+  <img src="https://pbs.twimg.com/media/F8TYO5gbEAA1S-r.jpg" width="300px" alt="picture">
   <p></p>
   </div>
 </details>
@@ -144,7 +139,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 3. **Database and storage**: `Firestore` , `App Script`
 
-4. **Services**            : `Food data API` , `Kaggle Notebooks` , `email-js`
+4. **Services**            : `Food data API` , `Kaggle Notebooks`
    
 5. **Deployment**          : `Netlify`
   
