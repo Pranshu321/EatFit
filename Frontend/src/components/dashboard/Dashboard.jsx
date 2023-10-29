@@ -39,14 +39,14 @@ const Dashboard = () => {
                     <span className="mx-2 text-lg font-medium">Dashboard</span>
                   </Link>
 
-                  <Link
+                  {/* <Link
                     to={"/calorie"}
                     className="listItem flex  px-7 py-5 text-white bg-gray-700 my-5 mx-5 transition-colors duration-300 transform rounded-full dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
                   >
                     <span className="mx-2 text-lg font-medium">
                       Calorie Snap
                     </span>
-                  </Link>
+                  </Link> */}
 
                   <Link
                     to={"/attendance"}
