@@ -1,48 +1,76 @@
 import React, { useState, useEffect } from "react";
-// import { useNavigate } from "react-router-dom";
-// import { onAuthStateChanged } from "firebase/auth";
-// import { auth} from "../../firebase/firebase";
-import axios from 'axios';
+import { useNavigate } from "react-router-dom";
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from "../../firebase/firebase";
+import axios from "axios";
 import Layout from "../Layout";
-
 
 function CalorieSnap() {
 	const [photo, setPhoto] = useState(null);
 	const [file, setFile] = useState();
+    const [dish, setDish] = useState("");
+	const navigate = useNavigate();
+
 	const handlePhotoChange = (event) => {
 		setPhoto(event.target.files[0]);
 		setFile(URL.createObjectURL(event.target.files[0]));
+		console.log(photo);
+		console.log(file);
 	};
 
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		// Do something with the photo, such as upload it to a server
+		console.log(photo);
+		console.log(file);
 
-        let custom_file_upload_url = `http://localhost:8000/upload`;
+		let custom_file_upload_url = `http://localhost:8000/upload`;
 
+		let formData = new FormData();
+		formData.append("file", photo);
+		// the image field name should be similar to your api endpoint field name
+		// in my case here the field name is customFile
 
-        let formData = new FormData();
-        formData.append('customFile', photo);
-        // the image field name should be similar to your api endpoint field name
-        // in my case here the field name is customFile
+		let config = {
+			method: "post",
+			maxBodyLength: Infinity,
+			url: "http://127.0.0.1:8000/upload",
+			headers: {
+                "Content-Type": "multipart/form-data",
+			},
+			data: formData,
+		};
 
-        axios.post(
-            custom_file_upload_url,
-            formData,
-            {
-                headers: {
-                    "Content-type": "multipart/form-data",
-				
-                },                    
-            }
-        )
-        .then(res => {
-            console.log(`Success` + res.data);
-        })
-        .catch(err => {
-            console.log(err.message);
-        })
+		axios
+			.request(config)
+			.then((response) => {
+				console.log(JSON.stringify(response.data));
+                setDish(response.data[0])
+			})
+			.catch((err) => {
+				console.log(err.message);
+			});
 	};
+
+    useEffect(() => {
+        if (dish) {
+            let config = {
+                method: 'get',
+                maxBodyLength: Infinity,
+                url: 'https://api.edamam.com/api/food-database/v2/parser',
+                headers: {},
+                params: { app_id: 'b9db0027', app_key: 'b495e1941607af35b205a97df54b4088', ingr: dish },
+              };
+              
+              axios.request(config)
+              .then((response) => {
+                console.log(JSON.stringify(response.data));
+              })
+              .catch((error) => {
+                console.log(error);
+              });
+        }
+    }, [dish]);
 
 	return (
 		<Layout>
