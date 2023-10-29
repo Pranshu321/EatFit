@@ -39,11 +39,12 @@ const Blog = () => {
         </div>
       </div>
       <div className="flex justify-evenly gap-y-4 flex-wrap mx-10">
-        {data.map((item,idx) => {
+        {data.map((item, idx) => {
           return (
             <Card
-              key={item.id}
+              key={idx + 1}
               Heading={item.title}
+              author={item.author}
               Description={item.content}
               Image={item.image}
               id={idi[idx]}

@@ -34,14 +34,14 @@ const Dashboard = () => {
                 <div id="list">
                   <Link
                     to={"/dashboard"}
-                    className="listItem flex  px-7 py-5 text-black bg-gray-100 my-5 mx-5 transition-colors duration-300 transform rounded-full dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
+                    className="listItem flex  px-7 py-5 text-black bg-gray-100 my-5 mx-5 transition-colors duration-300 transform rounded-full hover:bg-gray-100 hover:text-gray-700"
                   >
                     <span className="mx-2 text-lg font-medium">Dashboard</span>
                   </Link>
 
                   {/* <Link
                     to={"/calorie"}
-                    className="listItem flex  px-7 py-5 text-white bg-gray-700 my-5 mx-5 transition-colors duration-300 transform rounded-full dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
+                    className="listItem flex  px-7 py-5 text-white bg-gray-700 my-5 mx-5 transition-colors duration-300 transform rounded-full hover:bg-gray-100 hover:text-gray-700"
                   >
                     <span className="mx-2 text-lg font-medium">
                       Calorie Snap
@@ -50,7 +50,7 @@ const Dashboard = () => {
 
                   <Link
                     to={"/attendance"}
-                    className="listItem flex  px-7 py-5 text-white bg-gray-700 my-5 mx-5 transition-colors duration-300 transform rounded-full dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
+                    className="listItem flex  px-7 py-5 text-white bg-gray-700 my-5 mx-5 transition-colors duration-300 transform rounded-full hover:bg-gray-100 hover:text-gray-700"
                   >
                     <span className="mx-2 text-lg font-medium">
                       Nutritionist Checkup
@@ -59,7 +59,7 @@ const Dashboard = () => {
 
                   <Link
                     to={"/yourarticles"}
-                    className="listItem flex  px-7 py-5 text-white bg-gray-700 my-5 mx-5 transition-colors duration-300 transform rounded-full dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
+                    className="listItem flex  px-7 py-5 text-white bg-gray-700 my-5 mx-5 transition-colors duration-300 transform rounded-full hover:bg-gray-100 hover:text-gray-700"
                   >
                     <span className="mx-2 text-lg font-medium">
                       Your Articles
