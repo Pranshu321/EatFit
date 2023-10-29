@@ -32,11 +32,11 @@ function CalorieSnap() {
 		event.preventDefault();
 		// Do something with the photo, such as upload it to a server
 		var data = new FormData();
-		var imagedata = document.querySelector('input[type="file"]').files[0];
+		var imagedata = photo
 		data.append("data", imagedata);
-		data.append("data", imagedata);
+		// data.append("data", imagedata);
 
-		fetch("http://localhost:8000/upload/", {
+		fetch("http://localhost:8000/upload", {
 			mode: "no-cors",
 			method: "POST",
 			body: data,

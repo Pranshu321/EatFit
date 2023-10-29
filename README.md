@@ -8,7 +8,7 @@
 <p align="left">
 <img src="https://github.com/Pranshu321/FeedIndia/assets/73426684/52315846-cd70-4bcd-a334-ba3987ec591b" width="300px" alt="picture">
 <img src="https://github.com/Pranshu321/FeedIndia/assets/73426684/eac51d3f-ad88-47f5-ac62-2af5fd3bd7fa" width="400px" alt="picture">
-Just having a meal isn't enough , taking right meal for your body and making nutritional good choices is important. With <b>" Feed India " </b> we aim to improve India's Hunger Index ranking and hence reducing child wastage and stunting by making people aware of their nutrition intake. Through our app we can start making informed choices, take nutritionist suggestions, bridge the gap in your diet, and nourish your body with the nutrients it deserves. 
+<br>Just having a meal isn't enough , taking right meal for your body and making nutritional good choices is important. With <b>" Feed India " </b> we aim to improve India's Hunger Index ranking and hence reducing child wastage and stunting by making people aware of their nutrition intake. Through our app we can start making informed choices, take nutritionist suggestions, bridge the gap in your diet, and nourish your body with the nutrients it deserves. 
 </p>
 
 
