@@ -30,7 +30,7 @@ In the latest Hunger Index Report India was categorised with severity of hunger 
 <div align="left">
 <h3> How it works </h3>
 <h4>Capture and analyze your favorite Indian food photos to determine calorie counts and discover similar foods.</h4>
-<img src="https://pbs.twimg.com/media/F8TYO5gbEAA1S-r.jpg" width="300px" alt="picture">
+<img src="https://github.com/Pranshu321/FeedIndia/assets/73426684/54b79709-ad57-45a2-b8ec-e7b4e573813d" width="300px" alt="picture">
 <p></p>
 </div>
 </details>
@@ -70,7 +70,7 @@ In the latest Hunger Index Report India was categorised with severity of hunger 
  <div align="left">
  <h3> How it works </h3>
  <h4>Access informative articles on nutrition, health, and culinary topics to enhance your food knowledge.</h4>
- <img src="https://pbs.twimg.com/media/F8TYO5gbEAA1S-r.jpg" width="300px" alt="picture">
+ <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/86917304/278876356-c30b9545-f3cd-4bac-8c2c-a1e36afc26bb.png " width="500px" alt="picture">
  <p></p>
  </div>  
 </details>
@@ -80,7 +80,7 @@ In the latest Hunger Index Report India was categorised with severity of hunger 
   <div align="left">
   <h3> How it works </h3>
   <h4>Get expert advice from certified nutritionists to support your dietary goals and make healthier choices.</h4>
-  <img src="https://pbs.twimg.com/media/F8TYO5gbEAA1S-r.jpg" width="300px" alt="picture">
+  <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/86917304/278876321-b03d7774-3688-415b-82e1-a494559c670b.png " width="500px" alt="picture">
   <p></p>
   </div>
 </details>
