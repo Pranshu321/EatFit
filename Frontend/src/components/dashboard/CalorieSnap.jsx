@@ -10,6 +10,7 @@ function CalorieSnap() {
 	const [file, setFile] = useState();
 	const [dish, setDish] = useState("");
 	const [nutriData, setnutriData] = useState();
+	const [dishContaints, setDishContaints] = useState([]);
 	const navigate = useNavigate();
 
 	const handlePhotoChange = (event) => {
@@ -46,7 +47,7 @@ function CalorieSnap() {
 			.request(config)
 			.then((response) => {
 				console.log(JSON.stringify(response.data));
-                let dis = response.data[0].replace(/_/g, ' ')
+				let dis = response.data[0].replace(/_/g, " ");
 				setDish(dis);
 			})
 			.catch((err) => {
@@ -73,6 +74,11 @@ function CalorieSnap() {
 				.then((response) => {
 					console.log(JSON.stringify(response.data));
 					setnutriData(response.data);
+					nutriData.hints[0].food.foodContentsLabel
+						? setDishContaints(
+								nutriData.hints[0].food.foodContentsLabel.split(",")
+						  )
+						: null;
 				})
 				.catch((error) => {
 					console.log(error);
@@ -177,10 +183,11 @@ function CalorieSnap() {
 										<div className="card-body">
 											<h2 className="card-title">Food Contents </h2>
 											<p>
-												{nutriData.hints[0].food.foodContentsLabel
-													? nutriData.hints[0].food
-															.foodContentsLabel
-													: "No data"}
+												{dishContaints.map((item, idx) => {
+													<div className="badge badge-outline">
+														{item}
+													</div>;
+												})}
 											</p>
 										</div>
 									</div>
@@ -197,7 +204,6 @@ function CalorieSnap() {
 											</div>
 										</div>;
 									})}
-
 								</>
 							) : null}
 						</div>
