@@ -176,7 +176,35 @@ function CalorieSnap() {
 										<div className="card-body">
 											<h2 className="card-title">Food Contents </h2>
 											<p>
-												{nutriData.hints[0].food.foodContentsLabel ? nutriData.hints[0].food.foodContentsLabel : "No data"}
+												{nutriData.hints[0].food.foodContentsLabel
+													? nutriData.hints[0].food
+															.foodContentsLabel
+													: "No data"}
+											</p>
+										</div>
+									</div>
+
+									<h1>Similar Dishes</h1>
+									{nutriData.hints.map((item, idx) => {
+										<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
+											<div className="card bg-base-100 shadow-xl m-10" key={idx}>
+												<div className="card-body">
+													<h2 className="card-title">
+														{item.food.label}
+													</h2>
+												</div>
+											</div>
+										</div>;
+									})}
+
+									<div className="card bg-base-100 shadow-xl m-10">
+										<div className="card-body">
+											<h2 className="card-title">Food Contents </h2>
+											<p>
+												{nutriData.hints[0].food.foodContentsLabel
+													? nutriData.hints[0].food
+															.foodContentsLabel
+													: "No data"}
 											</p>
 										</div>
 									</div>
