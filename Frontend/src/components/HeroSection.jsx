@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Clients } from "../Data/Data";
+// import { Clients } from "../Data/Data";
 const HeroSection = () => {
   return (
     // container

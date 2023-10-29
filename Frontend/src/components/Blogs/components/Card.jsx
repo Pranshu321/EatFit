@@ -12,6 +12,7 @@ const Card = ({ Description, Heading, Image, id }) => {
               "https://images.unsplash.com/photo-1546961329-78bef0414d7c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
             }
             className="h-[200px] w-full rounded-md object-cover"
+            alt="Logo"
           />
         </Link>
         <div className="p-2">

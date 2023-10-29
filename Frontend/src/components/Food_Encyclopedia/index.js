@@ -12,16 +12,17 @@ const FoodEncyclopedia = () => {
   const course = ["main course", "dessert", "snack"];
 
   const getData = async () => {
-    const response = await fetch(`http://127.0.0.1:8000/foods/${stateValue}`);
+    const response = await fetch(
+      `https://food-encyclopedia-5bxa.onrender.com/foods/${stateValue}`
+    );
     const data = await response.json();
     setFoodOptions(data);
   };
 
   const getFoodData = async () => {
-    console.log(`http://127.0.0.1:8000/food-details/${stateValue}/${foodValue}`);
     if (stateValue !== "") {
       const response = await fetch(
-        `http://127.0.0.1:8000/food-details/${stateValue}/${foodValue}`
+        `https://food-encyclopedia-5bxa.onrender.com/food-details/${stateValue}/${foodValue}`
       );
       const data = await response.json();
       console.log(data);
