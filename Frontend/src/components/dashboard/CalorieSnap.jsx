@@ -71,7 +71,7 @@ function CalorieSnap() {
             let config = {
                 method: 'get',
                 maxBodyLength: Infinity,
-                url: 'https://api.edamam.com/api/food-database/v2/parser?app_id=b9db0027&app_key=b495e1941607af35b205a97df54b4088&ingr=biryani',
+                url: 'https://api.edamam.com/api/food-database/v2/parser',
                 headers: {},
                 params: { app_id: '150', app_key: '1.83', ingr: dish },
               };
