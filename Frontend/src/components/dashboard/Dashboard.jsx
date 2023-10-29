@@ -1,32 +1,32 @@
 import React, { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { auth, db } from "../../firebase/firebase";
-import { featureData, technologyIntro } from "../../Data/Data";
+// import { featureData, technologyIntro } from "../../Data/Data";
 import { FaArrowRight } from "react-icons/fa6";
 import { onAuthStateChanged } from "firebase/auth";
 
 const Dashboard = () => {
   const router = useNavigate();
-//   const featureData = [
-//   {
-//     img: iconfirst,
-//     alt: `First feature`,
-//     title: `Write Articles`,
-//     discription: ` Snap a photo for instant nutrition information.`,
-//     btn: `Click a snap`,
-//     link: "/calorie",
-//     bg: true,
-//   },
-//   {
-//     img: iconSecond,
-//     alt: `burger illustration`,
-//     title: `Nutri Tracker`,
-//     discription: `Plan meals and track their nutritional values.`,
-//     btn: `Start Planning`,
-//     link: "/nutri",
-//     bg: true,
-//   }
-//   ];
+  const featureData = [
+    {
+      img: "https://github-production-user-asset-6210df.s3.amazonaws.com/86917304/278880082-c39c6fee-ac0a-4807-996b-bbff9ffb99c4.png",
+      alt: `First feature`,
+      title: `Write Articles`,
+      discription: ` Share your food and nutrition knowledge to the community. Write your blogs today Empower India and the world with the right nutrition knowledge`,
+      btn: `Write a Blog`,
+      link: "/yourarticles",
+      bg: true,
+    },
+    {
+      img: "https://github-production-user-asset-6210df.s3.amazonaws.com/86917304/278880077-e283ae67-2ba5-4b9d-9afa-fc1e294acdf2.png",
+      alt: `burger illustration`,
+      title: `Book an Appointment`,
+      discription: `Visit your dietitian and Nutritionist for more guidance and a proper health check-up!`,
+      btn: `Book your nutritionist`,
+      link: "/attendance",
+      bg: true,
+    },
+  ];
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
@@ -127,7 +127,7 @@ const Dashboard = () => {
             </div>
           </aside>
           <div className=" w-3/4 p-16 flex justify-center items-center ">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 rounded-3xl border-solid border-[1px] border-gray-700 overflow-hidden">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 rounded-3xl border-solid border-[1px] border-gray-700 overflow-hidden">
               {featureData.map((value, key) => {
                 return (
                   <Link to={value.link} className="">
@@ -135,7 +135,7 @@ const Dashboard = () => {
                       key={key}
                       className={
                         value.bg
-                          ? "group py-10 px-10 bg-white group-hover:shadow-2xl group-hover:shadow-gray-600/10 border-solid border-[1px] border-gray-700 hover:bg-gray-100"
+                          ? "group h-[20.83rem] py-10 px-10 bg-white group-hover:shadow-2xl group-hover:shadow-gray-600/10 border-solid border-[1px] border-gray-700 hover:bg-gray-100"
                           : "group py-10 px-10 bg-transparent group-hover:shadow-2xl group-hover:shadow-gray-600/10 border-solid border-[1px] border-gray-700 hover:bg-gray-100"
                       }
                     >

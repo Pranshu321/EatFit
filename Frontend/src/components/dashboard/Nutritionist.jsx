@@ -1,9 +1,27 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Cards from "./components/Card"
 import Experts from "./Experts";
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from "../../firebase/firebase";
+import { useNavigate } from "react-router-dom";
 
 const Nutritionist = () => {
   const [Free, setFree] = useState("");
+  const router = useNavigate();
+    useEffect(() => {
+      onAuthStateChanged(auth, (user) => {
+        if (user) {
+          // User is signed in, see docs for a list of available properties
+          // https://firebase.google.com/docs/reference/js/firebase.User
+          // ...
+        } else {
+          // User is signed out
+          router("/");
+          // ...
+        }
+      });
+    });
+
   
   return (
     <div className="overflow-y-scroll h-[93vh] p-4 flex flex-col gap-y-4 remove-scroll">
