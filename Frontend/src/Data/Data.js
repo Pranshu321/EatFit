@@ -9,10 +9,10 @@ import googleCloud from "../assets/images/clients/google-cloud.svg";
 import google from "../assets/images/clients/google.svg";
 import microsoft from "../assets/images/clients/microsoft.svg";
 import netflix from "../assets/images/clients/netflix.svg";
-import iconfirst from "../assets/images/icons/iconkechi.png";
-import iconSecond from "../assets/images/icons/iconfluit.png";
-import iconThird from "../assets/images/icons/iconget.png";
-import iconForth from "../assets/images/icons/iconWatch.png";
+import iconfirst from "../assets/images/icons/camera.png";
+import iconSecond from "../assets/images/icons/nutrient.png";
+import iconThird from "../assets/images/icons/recipe-book.png";
+import iconForth from "../assets/images/icons/food.png";
 
 export const avtaarsImg = {
   img1: avtar1,

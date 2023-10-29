@@ -30,9 +30,9 @@ const HeroSection = () => {
         <button className="  md:w-32 h-11 w-full bg-btn rounded-3xl px-4 py-1 text-textH font-semibold hover:scale-105   transition-all duration-500 z-50">
           <Link to={"/login"}>Get started</Link>
         </button>
-        <button className="md:w-32 h-11 w-full bg-HoverDiv rounded-3xl px-4 py-1 text-textH font-semibold   transition-all duration-500 border-[1px] border-gray-700  hover:scale-105  z-50 ">
+        {/* <button className="md:w-32 h-11 w-full bg-HoverDiv rounded-3xl px-4 py-1 text-textH font-semibold   transition-all duration-500 border-[1px] border-gray-700  hover:scale-105  z-50 ">
           <Link to={"/article"}>Learn more</Link>
-        </button>
+        </button> */}
       </div>
       <div className=" lg:w-[70%] md:w-4/5   hidden  h-auto mt-16 border-t-[1px] border-t-gray-700  border-b-[1px] border-b-gray-700 md:flex justify-between items-center  py-8">
         <div className="w-auto h-auto box-border flex justify-center items-start flex-col gap-y-2">
@@ -51,7 +51,7 @@ const HeroSection = () => {
           <h2 className="text-textH font-semibold  text-lg">
             Facilitate Access{" "}
           </h2>
-          <p className="text-textP ">Finding most suitable nutrionists and free pantries</p>
+          <p className="text-textP ">Finding most suitable nutritionists and free food</p>
         </div>
       </div>
       {/* <div className="mt-12 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:w-full  w-4/5">
