@@ -105,7 +105,7 @@ function CalorieSnap() {
           console.log(error);
         });
     }
-  }, []);
+  }, [dish]);
 
   return (
     <Layout>
