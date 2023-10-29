@@ -95,13 +95,11 @@ function CalorieSnap() {
           // console.log(JSON.stringify(response.data));
           console.log(response);
           setnutriData(response.data);
-          response.data.hints[0].food.foodContentsLabel
-            ? setDishContaints(
-                extractIngredients(
-                  response.data.hints[0].food.foodContentsLabel
-                )
-              )
-            : null;
+          if (response?.data?.hints[0].food.foodContentsLabel) {
+            setDishContaints(
+              extractIngredients(response.data.hints[0].food.foodContentsLabel)
+            );
+          }
         })
         .catch((error) => {
           console.log(error);
