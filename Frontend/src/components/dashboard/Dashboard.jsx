@@ -1,12 +1,32 @@
 import React, { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { auth, db } from "../../firebase/firebase";
-import { featureData, technologyIntro } from "../../Data/Data";
+// import { featureData, technologyIntro } from "../../Data/Data";
 import { FaArrowRight } from "react-icons/fa6";
 import { onAuthStateChanged } from "firebase/auth";
 
 const Dashboard = () => {
   const router = useNavigate();
+  const featureData = [
+  {
+    img: iconfirst,
+    alt: `First feature`,
+    title: `Calorie Snap`,
+    discription: ` Snap a photo for instant nutrition information.`,
+    btn: `Click a snap`,
+    link: "/calorie",
+    bg: true,
+  },
+  {
+    img: iconSecond,
+    alt: `burger illustration`,
+    title: `Nutri Tracker`,
+    discription: `Plan meals and track their nutritional values.`,
+    btn: `Start Planning`,
+    link: "/nutri",
+    bg: true,
+  }
+  ];
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       if (user) {

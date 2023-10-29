@@ -12,6 +12,7 @@ import FoodEncyclopedia from "./components/Food_Encyclopedia";
 import Dashboard from "./components/dashboard/Dashboard";
 import CalorieSnap from "./components/dashboard/CalorieSnap";
 import Articles from "./components/dashboard/Articles";
+import Nutritionist from "./components/dashboard/Nutritionist";
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/calorie" element={<CalorieSnap />} />
         <Route path="/yourarticles" element={<Articles />} />
+        <Route path="/attendance" element={<Nutritionist />} />
       </Routes>
     </div>
   );
