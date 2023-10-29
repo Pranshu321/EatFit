@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Card = ({ Description, Heading, Image, id }) => {
+const Card = ({ Description, Heading, Image, id , author}) => {
   return (
     <div>
       <div className="w-[300px] rounded-md p-2">
@@ -19,8 +19,11 @@ const Card = ({ Description, Heading, Image, id }) => {
           <h1 className="text-lg font-semibold">
             {Heading || "About Macbook"}
           </h1>
+          <h2 className="text-sm font-semibold text-gray-600">
+            By - {author || "About Macbook"}
+          </h2>
           <p className=" text-sm text-gray-600">
-            {Description ||
+            {Description.slice(0, 200) ||
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?"}
           </p>
         </div>

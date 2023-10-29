@@ -1,11 +1,12 @@
 import React, { useEffect, useState as us } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { auth, db, storage } from "../../firebase/firebase";
 import toast, { Toaster } from "react-hot-toast";
 import { addDoc, collection, deleteDoc, doc } from "firebase/firestore";
 import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
 import useState from "react-usestateref";
 import { v4 } from "uuid";
+import { onAuthStateChanged } from "firebase/auth";
 
 const Articles = () => {
   const [articles, setArticles, artilcesref] = useState([]);
@@ -16,6 +17,21 @@ const Articles = () => {
     content: "",
     image: null,
   });
+
+    const router = useNavigate();
+    useEffect(() => {
+      onAuthStateChanged(auth, (user) => {
+        if (user) {
+          // User is signed in, see docs for a list of available properties
+          // https://firebase.google.com/docs/reference/js/firebase.User
+          // ...
+        } else {
+          // User is signed out
+          router("/");
+          // ...
+        }
+      });
+    });
 
   const DeleteData = async (id) => {
     try {
@@ -172,8 +188,7 @@ const Articles = () => {
                   </span>
                 </a>
 
-                <a
-                  href="#"
+                <button
                   onClick={() => auth.signOut()}
                   className="text-gray-500 transition-colors duration-200 rotate-180 dark:text-gray-400 rtl:rotate-0 hover:text-btn dark:hover:text-blue-400"
                 >
@@ -191,7 +206,7 @@ const Articles = () => {
                       d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75"
                     />
                   </svg>
-                </a>
+                </button>
               </div>
             </div>
           </aside>
@@ -267,16 +282,16 @@ const Articles = () => {
               </dialog>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 ">
                 {artilcesref.current.map((article, idx) => (
-                  <div key={idx+1} className="card w-96 bg-base-100 shadow-xl m-16">
+                  <div key={idx+1} className="card w-[28rem] bg-base-100 shadow-xl m-16">
                     <div className="card-body">
                       <button
                         onClick={() => DeleteData(idsref.current[idx])}
-                        className="btn btn-error text-white absolute right-3 w-1/4"
+                        className="btn btn-error text-white relative  w-full"
                       >
                         Delete
                       </button>
                       <h2 className="card-title">{article.title}</h2>
-                      <p>{article.content}</p>
+                      <p>{article.content.slice(0,500)}</p>
                     </div>
                     <figure>
                       <img
