@@ -26,6 +26,8 @@ In the latest Hunger Index Report India was categorised with severity of hunger 
 <img src="https://github.com/Pranshu321/FeedIndia/assets/73426684/52315846-cd70-4bcd-a334-ba3987ec591b" width="300px" alt="picture">
 
 <img src="https://github.com/Pranshu321/FeedIndia/assets/73426684/eac51d3f-ad88-47f5-ac62-2af5fd3bd7fa" width="400px" alt="picture">
+
+
 <details>
   <summary><strong>Calorie Snap </strong></summary>
 <div align="left">
@@ -41,7 +43,7 @@ In the latest Hunger Index Report India was categorised with severity of hunger 
 <div align="left">
 <h3> How it works </h3>
 <h4>Plan and track your diet, monitor your nutritional intake of proteins, vitamins and other essentials, and make good food choices.</h4>
-<img src="https://github.com/Pranshu321/FeedIndia/assets/73426684/b23a5272-23d7-4e99-9893-f511e84fe8eb" width="500px" alt="picture">
+<img src="https://github.com/Pranshu321/FeedIndia/assets/73426684/b23a5272-23d7-4e99-9893-f511e84fe8eb" width="650px" alt="picture">
 <p></p>
 </div>
 </details>
