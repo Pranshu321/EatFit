@@ -68,11 +68,15 @@ function CalorieSnap() {
 
     useEffect(() => {
         if (dish) {
-            
-              
-              axios.get('https://api.edamam.com/api/food-database/v2/parser', {
+            let config = {
+                method: 'get',
+                maxBodyLength: Infinity,
+                url: 'https://api.edamam.com/api/food-database/v2/parser',
+                headers: {},
                 params: { app_id: '150', app_key: '1.83', ingr: dish },
-              })
+              };
+              
+              axios.request(config)
               .then((response) => {
                 console.log(JSON.stringify(response.data));
               })
