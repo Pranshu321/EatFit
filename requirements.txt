@@ -1,0 +1,8 @@
+uvicorn 
+fastapi 
+pandas 
+matplotlib 
+pydantic 
+transformers 
+torch 
+python-multipart
