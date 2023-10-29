@@ -9,6 +9,9 @@ import Blog from "./components/Blogs";
 import SingleBlog from "./components/Blogs/SingleBlog";
 import Pantry from "./components/pantry";
 import FoodEncyclopedia from "./components/Food_Encyclopedia";
+import Dashboard from "./components/dashboard/Dashboard";
+import CalorieSnap from "./components/dashboard/CalorieSnap";
+import Articles from "./components/dashboard/Articles";
 
 const App = () => {
   return (
@@ -22,6 +25,9 @@ const App = () => {
         <Route path="/pantry" element={<Pantry />}></Route>
         <Route path="/article/:blogId" element={<SingleBlog />} />
         <Route path="/foodenc" element={<FoodEncyclopedia />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/calorie" element={<CalorieSnap />} />
+        <Route path="/yourarticles" element={<Articles />} />
       </Routes>
     </div>
   );
