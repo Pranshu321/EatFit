@@ -8,7 +8,8 @@ import Layout from "../Layout";
 function CalorieSnap() {
 	const [photo, setPhoto] = useState(null);
 	const [file, setFile] = useState();
-    const [dish, setDish] = useState("");
+	const [dish, setDish] = useState("");
+	const [nutriData, setnutriData] = useState();
 	const navigate = useNavigate();
 
 	const handlePhotoChange = (event) => {
@@ -36,7 +37,7 @@ function CalorieSnap() {
 			maxBodyLength: Infinity,
 			url: "http://127.0.0.1:8000/upload",
 			headers: {
-                "Content-Type": "multipart/form-data",
+				"Content-Type": "multipart/form-data",
 			},
 			data: formData,
 		};
@@ -45,38 +46,44 @@ function CalorieSnap() {
 			.request(config)
 			.then((response) => {
 				console.log(JSON.stringify(response.data));
-                setDish(response.data[0])
+				setDish(response.data[0]);
 			})
 			.catch((err) => {
 				console.log(err.message);
 			});
 	};
 
-    useEffect(() => {
-        if (dish) {
-            let config = {
-                method: 'get',
-                maxBodyLength: Infinity,
-                url: 'https://api.edamam.com/api/food-database/v2/parser',
-                headers: {},
-                params: { app_id: 'b9db0027', app_key: 'b495e1941607af35b205a97df54b4088', ingr: dish },
-              };
-              
-              axios.request(config)
-              .then((response) => {
-                console.log(JSON.stringify(response.data));
-              })
-              .catch((error) => {
-                console.log(error);
-              });
-        }
-    }, [dish]);
+	useEffect(() => {
+		if (dish) {
+			let config = {
+				method: "get",
+				maxBodyLength: Infinity,
+				url: "https://api.edamam.com/api/food-database/v2/parser",
+				headers: {},
+				params: {
+					app_id: "b9db0027",
+					app_key: "b495e1941607af35b205a97df54b4088",
+					ingr: dish,
+				},
+			};
+
+			axios
+				.request(config)
+				.then((response) => {
+					console.log(JSON.stringify(response.data));
+					setnutriData(response.data);
+				})
+				.catch((error) => {
+					console.log(error);
+				});
+		}
+	}, [dish]);
 
 	return (
 		<Layout>
 			<main>
 				<div className="flex justify-center">
-					<div className=" w-3/4 flex p-32  ">
+					<div className=" p-20  ">
 						<form
 							onSubmit={handleSubmit}
 							className="flex flex-col items-center justify-center w-full"
@@ -132,6 +139,50 @@ function CalorieSnap() {
 								Submit
 							</button>
 						</form>
+
+						<div className="p-20">
+							{nutriData ? (
+								<>
+									<div className="card bg-base-100 shadow-xl flex flex-row">
+										<div className="card-body">
+											<h2 className="card-title">Nutrients</h2>
+											<p>Energy Kcal :</p>
+											<p>Protien count :</p>
+											<p>Fat :</p>
+											<p>carbohydrates :</p>
+											<p>FIBTG (fiber, total dietary) :</p>
+										</div>
+										<div className="card-body">
+											<h2 className="card-title">Metrics</h2>
+											<p>
+												{
+													nutriData.hints[0].food.nutrients
+														.ENERC_KCAL
+												}
+											</p>
+											<p>
+												{nutriData.hints[0].food.nutrients.PROCNT}
+											</p>
+											<p>{nutriData.hints[0].food.nutrients.FAT}</p>
+											<p>
+												{nutriData.hints[0].food.nutrients.CHOCDF}
+											</p>
+											<p>
+												{nutriData.hints[0].food.nutrients.FIBTG}
+											</p>
+										</div>
+									</div>
+									<div className="card bg-base-100 shadow-xl m-10">
+										<div className="card-body">
+											<h2 className="card-title">Food Contents </h2>
+											<p>
+												{nutriData.hints[0].food.foodContentsLabel ? nutriData.hints[0].food.foodContentsLabel : "No data"}
+											</p>
+										</div>
+									</div>
+								</>
+							) : null}
+						</div>
 					</div>
 				</div>
 			</main>
