@@ -16,6 +16,7 @@
     "react-chartkick": "0.3.0",
     "react-device-detect": "1.6.2",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.47.0",
     "react-hot-toast": "^2.4.1",
     "react-icons": "^4.11.0",
     "react-router-dom": "^6.17.0",
