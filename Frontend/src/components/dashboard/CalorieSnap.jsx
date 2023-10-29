@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth, db } from "../../firebase/firebase";
+import axios from 'axios';
+
 
 function CalorieSnap() {
 	const [photo, setPhoto] = useState(null);
@@ -31,27 +33,30 @@ function CalorieSnap() {
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		// Do something with the photo, such as upload it to a server
-		var data = new FormData();
-		var imagedata = photo
-		data.append("data", imagedata);
-		// data.append("data", imagedata);
 
-		fetch("http://localhost:8000/upload", {
-			mode: "no-cors",
-			method: "POST",
-			body: data,
-		}).then(
-			function (res) {
-				if (res.ok) {
-					alert("Perfect! ");
-				} else if (res.status == 401) {
-					alert("Oops! ");
-				}
-			},
-			function (e) {
-				alert("Error submitting form!");
-			}
-		);
+        let custom_file_upload_url = `localhost:8000/upload/`;
+
+
+        let formData = new FormData();
+        formData.append('customFile', photo);
+        // the image field name should be similar to your api endpoint field name
+        // in my case here the field name is customFile
+
+        axios.post(
+            custom_file_upload_url,
+            formData,
+            {
+                headers: {
+                    "Content-type": "multipart/form-data",
+                },                    
+            }
+        )
+        .then(res => {
+            console.log(`Success` + res.data);
+        })
+        .catch(err => {
+            console.log(err);
+        })
 	};
 
 	return (
