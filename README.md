@@ -174,3 +174,4 @@ Video Link : [Demo Video](https://www.loom.com/share/07374277cc9242ab89b023517e9
 3. [Articles and videos on nutrition](https://nutritionfacts.org/)
 4. [Kaggle Indian Food dataset](https://www.kaggle.com/datasets/iamsouravbanerjee/indian-food-images-dataset)
 5. [Indian Food 101](https://www.kaggle.com/datasets/nehaprabhavalkar/indian-food-101)
+6. [Icons](https://www.flaticon.com/)
