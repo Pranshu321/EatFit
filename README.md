@@ -88,7 +88,7 @@ In the latest Hunger Index Report India was categorised with severity of hunger 
   <a id="top" href="https://feedindia.netlify.app/" target="blank">
     <img src="https://github.com/Pranshu321/FeedIndia/assets/73426684/015e2814-30c0-4ee1-9f9e-a41eb94895fa" width="100px" alt="logo">
   </a>
-<h3 align="left">This is an example of how you may give instructions on setting up your project locally.To get a local copy up and running follow these simple example steps.</h3>
+<h3 align="center">Instructions for setting up your project locally. Get a local copy up and follow these simple steps in your terminal.</h3>
 <h3 align = "center">Installation</h3>
 </div>
 <!-- <ul align = "left"> 
