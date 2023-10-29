@@ -45,7 +45,7 @@ const Blog = () => {
               key={item.id}
               Heading={item.title}
               Description={item.content}
-              Image={item.Image}
+              Image={item.image}
               id={idi[idx]}
             />
           );
