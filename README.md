@@ -41,7 +41,7 @@ In the latest Hunger Index Report India was categorised with severity of hunger 
 <div align="left">
 <h3> How it works </h3>
 <h4>Plan and track your diet, monitor your nutritional intake of proteins, vitamins and other essentials, and make good food choices.</h4>
-<img src="https://pbs.twimg.com/media/F8TYO5gbEAA1S-r.jpg" width="300px" alt="picture">
+<img src="https://github.com/Pranshu321/FeedIndia/assets/73426684/b23a5272-23d7-4e99-9893-f511e84fe8eb" width="500px" alt="picture">
 <p></p>
 </div>
 </details>
@@ -51,7 +51,7 @@ In the latest Hunger Index Report India was categorised with severity of hunger 
 <div align="left">
 <h3> How it works </h3>
 <h4>Explore a comprehensive database of Indian foods, including their ingredients, their taste, and place of origin. Through this, you get to know how rich Indian cuisines are!</h4>
-<img src="https://pbs.twimg.com/media/F8TYO5gbEAA1S-r.jpg" width="300px" alt="picture">
+<img src="https://github.com/Pranshu321/FeedIndia/assets/73426684/9988fe2b-e6fa-4030-b00a-bf7db7675344" width="500px" alt="picture">
 <p></p>
 </div>  
 </details>
@@ -61,7 +61,7 @@ In the latest Hunger Index Report India was categorised with severity of hunger 
   <div align="left">
   <h3> How it works </h3>
   <h4>Find the nearest food pantries offering free food assistance based on your City or State.</h4>
-  <img src="https://pbs.twimg.com/media/F8TYO5gbEAA1S-r.jpg" width="300px" alt="picture">
+  <img src="https://github.com/Pranshu321/FeedIndia/assets/73426684/f1781f4d-7ff2-4783-8ba7-c154b2d9cf01" width="500px" alt="picture">
   <p></p>
   </div> 
 </details>
