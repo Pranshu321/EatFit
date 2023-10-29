@@ -39,19 +39,19 @@ const HeroSection = () => {
           <h2 className="text-textH font-semibold  text-lg">
             Empower Healthy Choices
           </h2>
-          <p className="text-textP">Healthier food choices</p>
+          <p className="text-textP">Make Healthier food choices</p>
         </div>
         <div className="w-auto h-auto box-border flex justify-center items-start flex-col gap-y-2">
           <h2 className="text-textH font-semibold  text-lg">
             Nutritional Diversity
           </h2>
-          <p className="text-textP ">Value of a balanced diet.</p>
+          <p className="text-textP ">Know about Indian Cuisines</p>
         </div>
         <div className="w-auto h-auto box-border flex justify-center items-start flex-col gap-y-2">
           <h2 className="text-textH font-semibold  text-lg">
             Facilitate Access{" "}
           </h2>
-          <p className="text-textP ">Finding most suitable NGOs</p>
+          <p className="text-textP ">Finding most suitable nutrionists and free pantries</p>
         </div>
       </div>
       {/* <div className="mt-12 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:w-full  w-4/5">
