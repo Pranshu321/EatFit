@@ -49,7 +49,7 @@ function CalorieSnap() {
 			maxBodyLength: Infinity,
 			url: "http://127.0.0.1:8000/upload",
 			headers: {
-				...formData.getHeaders(),
+				// ...formData.getHeaders(),
                 "Content-Type": "multipart/form-data",
 			},
 			data: formData,
