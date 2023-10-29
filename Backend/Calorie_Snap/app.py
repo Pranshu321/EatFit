@@ -1,6 +1,6 @@
 from fastapi import FastAPI , HTTPException, File , UploadFile
 from transformers import pipeline
-import requests
+import requests as re 
 from PIL import Image
 from fastapi.middleware.cors import CORSMiddleware
 import requests
@@ -20,42 +20,42 @@ app.add_middleware(
     
 )
 
-class ImageURL(BaseModel):
-    url: str
 
 @app.get("/")
 def welcome_root():
     return "Upload the food image to track the calorie"
 
 @app.post("/upload/")
-def upload_image(image_url: ImageURL): 
-#     try: file: UploadFile = File(...)
-#         if file :   
-#             image = Image.open(file.file)
-#         model_name = "indian_food_image_detection"
-#         # image = "https://www.indianhealthyrecipes.com/wp-content/uploads/2023/09/tandoori-roti-recipe.jpg"
-#         pipe = pipeline('image-classification',model=model_name,device=0)
-#         pred = pipe(image)
-#         result = pred_label(pred)
-#         return result
-#     except:
-#         raise HTTPException(status_code=400, detail="No image or URL provided")
-    try:
-        if image_url and image_url.url:
-            # Fetch the image from the provided URL
-            response = requests.get(image_url.url)
-            image = Image.open(BytesIO(response.content)) 
-
+# def upload_image(image_url: ImageURL): 
+def upload_image(file: UploadFile =File(...)):
+    try: 
+        if file :   
+            image = Image.open(file.file)
             model_name = "indian_food_image_detection"
-            pipe = pipeline('image-classification', model=model_name, device=0)
+            # image = "https://www.indianhealthyrecipes.com/wp-content/uploads/2023/09/tandoori-roti-recipe.jpg"
+            pipe = pipeline('image-classification',model=model_name,device=0)
             pred = pipe(image)
             result = pred_label(pred)
             return result
         else:
-            raise HTTPException(status_code=400, detail="No valid image URL provided")
+            raise HTTPException(status_code=400, detail = "No valid image file provided")
     except:
-        raise HTTPException(status_code=400, detail="Failed to process the image URL")
+        raise HTTPException(status_code=400, detail="Failed to process the image")
+    # try:
+    #     if image_url and image_url.url:
+    #         # Fetch the image from the provided URL
+    #         response = requests.get(image_url.url)
+    #         image = Image.open(BytesIO(response.content)) 
 
+    #         model_name = "indian_food_image_detection"
+    #         pipe = pipeline('image-classification', model=model_name, device=0)
+    #         pred = pipe(image)
+    #         result = pred_label(pred)
+    #         return result
+    #     else:
+    #         raise HTTPException(status_code=400, detail="No valid image URL provided")
+    # except:
+    #     raise HTTPException(status_code=400, detail="Failed to process the image URL")
 
 
 def pred_label(predictions):
