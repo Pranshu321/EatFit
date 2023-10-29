@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-import { onAuthStateChanged } from "firebase/auth";
-import { auth} from "../../firebase/firebase";
+// import { useNavigate } from "react-router-dom";
+// import { onAuthStateChanged } from "firebase/auth";
+// import { auth} from "../../firebase/firebase";
 import axios from 'axios';
 import Layout from "../Layout";
 
@@ -9,22 +9,6 @@ import Layout from "../Layout";
 function CalorieSnap() {
 	const [photo, setPhoto] = useState(null);
 	const [file, setFile] = useState();
-	const navigate = useNavigate();
-
-	useEffect(() => {
-		onAuthStateChanged(auth, (user) => {
-			if (user) {
-				// User is signed in, see docs for a list of available properties
-				// https://firebase.google.com/docs/reference/js/firebase.User
-				// ...
-			} else {
-				// User is signed out
-				navigate("/");
-				// ...
-			}
-		});
-	}, []);
-
 	const handlePhotoChange = (event) => {
 		setPhoto(event.target.files[0]);
 		setFile(URL.createObjectURL(event.target.files[0]));

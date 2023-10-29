@@ -30,7 +30,7 @@ const SingleBlog = () => {
         <div className="flex w-1/2 h-1/3 justify-center pt-5">
           <img
             src={
-              data.image || 
+              data.image ||
               "https://user-images.githubusercontent.com/86917304/265525358-1876345d-594c-4300-94d2-9dda07d063d8.png"
             }
             alt="image"
@@ -46,7 +46,10 @@ const SingleBlog = () => {
         <div className="flex justify-center flex-col items-center">
           <img
             className="inline-block h-20 w-20 rounded-full"
-            src={data.authorImg}
+            src={
+              data.authorImg ||
+              "https://overreacted.io/static/profile-pic-c715447ce38098828758e525a1128b87.jpg"
+            }
             alt="Dan_Abromov"
           />
           <div className="text-lg font-semibold">{data.author}</div>
