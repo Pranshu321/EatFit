@@ -197,17 +197,6 @@ function CalorieSnap() {
 										</div>;
 									})}
 
-									<div className="card bg-base-100 shadow-xl m-10">
-										<div className="card-body">
-											<h2 className="card-title">Food Contents </h2>
-											<p>
-												{nutriData.hints[0].food.foodContentsLabel
-													? nutriData.hints[0].food
-															.foodContentsLabel
-													: "No data"}
-											</p>
-										</div>
-									</div>
 								</>
 							) : null}
 						</div>
