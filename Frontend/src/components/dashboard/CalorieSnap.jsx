@@ -34,7 +34,7 @@ function CalorieSnap() {
 		event.preventDefault();
 		// Do something with the photo, such as upload it to a server
 
-        let custom_file_upload_url = `localhost:8000/upload/`;
+        let custom_file_upload_url = `http://localhost:8000/upload`;
 
 
         let formData = new FormData();
@@ -48,6 +48,7 @@ function CalorieSnap() {
             {
                 headers: {
                     "Content-type": "multipart/form-data",
+				
                 },                    
             }
         )
@@ -55,7 +56,7 @@ function CalorieSnap() {
             console.log(`Success` + res.data);
         })
         .catch(err => {
-            console.log(err);
+            console.log(err.message);
         })
 	};
 
