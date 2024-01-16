@@ -55,28 +55,28 @@ const NavigationBar = () => {
       </button>
 
       {isOpen && (
-        <div className="absolute h-screen w-screen right-0 top-16 backdrop-blur-2xl bg-gray-900/70  transition-all delay-700 ">
-          <div className="flex justify-start align-middle flex-col bg-[#293041] w-[90%] rounded-3xl m-auto my-7 gap-6 p-7 border-[1px] border-gray-700">
+        <div className="absolute h-screen w-screen right-0 top-16 backdrop-blur-2xl bg-transparent transition-all delay-700 ">
+          <div className="flex justify-start align-middle flex-col bg-[#293041] bg-gray-200 w-[90%] rounded-3xl m-auto my-7 gap-6 p-7 border-[1px] border-gray-700">
             {NavItems.map((value, key) => {
               console.log(value);
               return (
                 <div key={key} className="m-0 h-auto ">
-                  <Link
+                  <RouterLink
                     to={value.Link}
-                    spy={true}
-                    smooth={true}
-                    offset={-100}
-                    duration={700}
+                    // spy={true}
+                    // smooth={true}
+                    // offset={-100}
+                    // duration={700}
                     className="text-black hover:text-[#6ACC00] text-lg w-36 transition-all duration-100 cursor-pointer"
                   >
                     {value.PageName}
-                  </Link>
+                  </RouterLink>
                 </div>
               );
             })}
-            <button className="px-4 py-1 w-full  text-textH text-base rounded-3xl  bg-btn hover:scale-105 transition-all duration-300">
+            <RouterLink to={"/login"} className="px-4 py-1 w-full text-textH text-base rounded-3xl bg-btn hover:scale-105 transition-all duration-300">
               Get Started
-            </button>
+            </RouterLink>
           </div>
         </div>
       )}
@@ -93,7 +93,10 @@ const NavigationBar = () => {
             </div>
           );
         })}
-        <RouterLink to="/login" className="px-4 py-1  text-textH text-base rounded-3xl  bg-btn hover:scale-105 ">
+        <RouterLink
+          to="/login"
+          className="px-4 py-1  text-textH text-base rounded-3xl  bg-btn hover:scale-105 "
+        >
           Login
         </RouterLink>
       </div>

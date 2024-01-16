@@ -87,8 +87,8 @@ const Pantry = () => {
             </div>
           </div>
         </div>
-        <div className="flex mx-10 justify-center gap-x-5">
-          <div class="w-[30%]">
+        <div className="flex flex-col gap-y-5 lg:flex-row mx-10 justify-center gap-x-5">
+          <div class="w-full lg:w-[30%]">
             <div class="relative flex items-center w-full h-12 rounded-lg border-btn border-2 focus-within:shadow-lg bg-white overflow-hidden">
               <div class="grid place-items-center h-full w-12 text-gray-300">
                 <svg
@@ -116,7 +116,7 @@ const Pantry = () => {
               />
             </div>
           </div>
-          <div class="w-[30%]">
+          <div class="w-full lg:w-[30%]">
             <div class="relative flex items-center w-full h-12 rounded-lg border-btn border-2 focus-within:shadow-lg bg-white overflow-hidden">
               <div class="grid place-items-center h-full w-12 text-gray-300">
                 <svg
@@ -148,7 +148,7 @@ const Pantry = () => {
             Search
           </button>
         </div>
-        <div className="flex mt-10 gap-y-10 flex-wrap w-full justify-evenly">
+        <div className="flex mt-10 gap-y-10 flex-wrap w-full items-center justify-center lg:justify-evenly">
             {
                 cardData.map((item,idx)=>{
                     return (

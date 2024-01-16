@@ -11,7 +11,7 @@ const PantryCard = ({ Name , State, City, type , est, mem1, mem2, address , mobi
     }
   return (
     <div>
-      <div className="relative hover:shadow-lg block w-[30rem] min-h-[20rem] max-h-max rounded-lg border border-gray-100 p-4 sm:p-6 lg:p-8">
+      <div className="relative hover:shadow-lg block w-[97vw] lg:w-[30rem] min-h-[20rem] max-h-max rounded-lg border border-gray-100 p-4 sm:p-6 lg:p-8">
         <span className="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600"></span>
 
         <div className="sm:flex sm:justify-between sm:gap-4">
