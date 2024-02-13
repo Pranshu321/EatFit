@@ -179,7 +179,7 @@ function SignUp() {
                     ></div>
                   </div>
                   <div className="text-gray-600 text-center mt-6">
-                    Already using FeedIndia?{" "}
+                    Already using EatFit?{" "}
                     <Link
                       to="/login"
                       className="text-blue-600 hover:underline transition duration-150 ease-in-out"

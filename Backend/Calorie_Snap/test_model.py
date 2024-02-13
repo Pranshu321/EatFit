@@ -1,6 +1,6 @@
 from transformers import pipeline
 
-model_name = "whatIS_thefood\indian_food_image_detection"
+model_name = "Backend\Calorie_Snap\indian_food_image_detection"
 
 pipe = pipeline('image-classification',model=model_name,device=0)
 

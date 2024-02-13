@@ -75,7 +75,7 @@ const Footer = () => {
         <p className="my-4 text-gray-900 box-border">
           This Website is Crafted By{" "}
           <span className=" font-extrabold text-btn">
-            FeedIndia | Hackit Dev
+            EatFit | Hackit Dev
           </span>{" "}
         </p>
       </div>

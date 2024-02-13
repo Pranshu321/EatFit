@@ -1,5 +1,5 @@
 export const NavCompany = {
-  title: "FeedIndia",
+  title: "EatFit",
 };
 
 export const NavigationData = [
