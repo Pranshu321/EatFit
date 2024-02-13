@@ -152,17 +152,13 @@ _Below is an example of how you can instruct your audience on installing and set
 
 <h2 align="center" size="30px"> Our team - Hackit </h2>
 
-Leader   - [Sreetama Ghosh Hazra](https://github.com/Sreetama2001)
+Leader  - [Pranshu Jain](https://github.com/Pranshu321)
 
-Member 2 - [Pranshu Jain](https://github.com/Pranshu321)
-
-Member 3 - [Mohammad Sami](https://github.com/MSamiDev)
-
-
+Member 2 - [Sreetama Ghosh Hazra](https://github.com/Sreetama2001)
 
 Web APP : [Feed India](https://feedindia.netlify.app/)
 
-Video Link : [Demo Video](https://www.loom.com/share/07374277cc9242ab89b023517e9a3c8c)
+Video Link : [Demo Video](https://www.youtube.com/watch?v=HpFczToNXb8)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
