@@ -1,13 +1,20 @@
-<h1 align="center" size="30px">Feed India</h1> 
+<h1 align="center" size="30px">Eat Fit</h1> 
 <div align="center">
+<!--   ![Eat_Fit - Copy](https://github.com/Pranshu321/FeedIndia/assets/86917304/31cb5588-3d9d-42d9-b250-f9d1c3908070) -->
+
+
   <a id="top" href="https://feedindia.netlify.app/" target="blank">
-    <img src="https://github.com/Pranshu321/FeedIndia/assets/73426684/015e2814-30c0-4ee1-9f9e-a41eb94895fa" width="200px" alt="logo">
+    <img src="https://github.com/Pranshu321/FeedIndia/assets/86917304/bf305dd9-c3eb-44c7-bcf3-1a50f9df50d2" width="200px" alt="logo">
   </a>
+  
 <h3 align="center">We care for "Every Bite, Every Story, Every Nourished Life"</h3>
 </div>
 <p align="left">
-<img src="https://github.com/Pranshu321/FeedIndia/assets/73426684/52315846-cd70-4bcd-a334-ba3987ec591b" width="300px" alt="picture">
-<img src="https://github.com/Pranshu321/FeedIndia/assets/73426684/eac51d3f-ad88-47f5-ac62-2af5fd3bd7fa" width="400px" alt="picture">
+<!--   ![image](https://github.com/Pranshu321/FeedIndia/assets/86917304/f8cb8d12-ef79-4287-bcf9-54e73eae9bf6) -->
+<!-- ![image](https://github.com/Pranshu321/FeedIndia/assets/86917304/8ae61a44-2cc2-498c-b22e-239c71623090) -->
+
+<img src="https://github.com/Pranshu321/FeedIndia/assets/86917304/8ae61a44-2cc2-498c-b22e-239c71623090" width="300px" alt="picture">
+<img src="https://github.com/Pranshu321/FeedIndia/assets/86917304/f8cb8d12-ef79-4287-bcf9-54e73eae9bf6" width="400px" alt="picture">
 <br>Just having a meal isn't enough , taking right meal for your body and making nutritional good choices is important. With <b>" Feed India " </b> we aim to improve India's Hunger Index ranking and hence reducing child wastage and stunting by making people aware of their nutrition intake. Through our app we can start making informed choices, take nutritionist suggestions, bridge the gap in your diet, and nourish your body with the nutrients it deserves. 
 </p>
 
@@ -70,7 +77,7 @@ In the latest Hunger Index Report India was categorised with severity of hunger 
  <div align="left">
  <h3> How it works </h3>
  <h4>Access informative articles on nutrition, health, and culinary topics to enhance your food knowledge.</h4>
- <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/86917304/278876356-c30b9545-f3cd-4bac-8c2c-a1e36afc26bb.png " width="500px" alt="picture">
+ <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/86917304/278876356-c30b9545-f3cd-4bac-8c2c-a1e36afc26bb.png" width="500px" alt="picture">
  <p></p>
  </div>  
 </details>
@@ -80,7 +87,9 @@ In the latest Hunger Index Report India was categorised with severity of hunger 
   <div align="left">
   <h3> How it works </h3>
   <h4>Get expert advice from certified nutritionists to support your dietary goals and make healthier choices.</h4>
-  <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/86917304/278876321-b03d7774-3688-415b-82e1-a494559c670b.png " width="500px" alt="picture">
+<!--     ![image](https://github.com/Pranshu321/FeedIndia/assets/86917304/57de7645-0e37-4abd-92f3-a413d836d6df) -->
+
+  <img src="https://github.com/Pranshu321/FeedIndia/assets/86917304/57de7645-0e37-4abd-92f3-a413d836d6df" width="500px" alt="picture">
   <p></p>
   </div>
 </details>
@@ -88,7 +97,7 @@ In the latest Hunger Index Report India was categorised with severity of hunger 
 <h2 align="center" size="30px">Getting Started</h2> 
 <div align="center">
   <a id="top" href="https://feedindia.netlify.app/" target="blank">
-    <img src="https://github.com/Pranshu321/FeedIndia/assets/73426684/015e2814-30c0-4ee1-9f9e-a41eb94895fa" width="100px" alt="logo">
+    <img src="https://github.com/Pranshu321/FeedIndia/assets/86917304/bf305dd9-c3eb-44c7-bcf3-1a50f9df50d2" width="100px" alt="logo">
   </a>
 <h3 align="center">Instructions for setting up your project locally. Get a local copy up and follow these simple steps in your terminal.</h3>
 <h3 align = "center">Installation</h3>
