@@ -165,9 +165,9 @@ Leader  - [Pranshu Jain](https://github.com/Pranshu321)
 
 Member 2 - [Sreetama Ghosh Hazra](https://github.com/Sreetama2001)
 
-Web APP : [Feed India](https://feedindia.netlify.app/)
+Web APP : [EatFit](https://feedindia.netlify.app/)
 
-Video Link : [Demo Video](https://www.youtube.com/watch?v=HpFczToNXb8)
+Video Link : [Demo Video](https://youtu.be/lyTV8L1xEVY?si=kau8gHYBHJi4zJq1)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
